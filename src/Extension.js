@@ -60,7 +60,7 @@ function Extension(){
         setIsLoading(true);
         tableau.extensions.settings.saveAsync().then(() => {
             setSelectedSheet(sheet);
-            loadSelectedMarks();
+            loadSelectedMarks(sheet);
         });
     };
 
